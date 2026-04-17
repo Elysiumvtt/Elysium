@@ -1,0 +1,91 @@
+{
+  "id": "elysium",
+  "title": "Elysium",
+  "description": "Elysium — a custom FoundryVTT RPG system combining BRP, Mythras, and WFRP mechanics.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Dangermouse",
+      "flags": {}
+    },
+    {
+      "name": "JamesB",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/elysium.mjs",
+    "module/setup/load.mjs"
+  ],
+  "styles": [
+    "css/elysium.css",
+    "css/npc.css"
+  ],
+  "packs": [
+    {
+      "label": "Elysium ID Macros",
+      "type": "Macro",
+      "name": "elysium-id-macros",
+      "path": "packs/elysium-id-macros",
+      "system": "elysium",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español (Spanish)",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "grid": {
+    "units": "m"
+  },
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/elysium/assets/brp-logo-powered_by-solid.png",
+      "thumbnail": "systems/elysium/assets/brp-logo-powered_by-solid.png",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "documentTypes": {
+    "RegionBehavior": {
+      "ChaosiumCanvasInterfaceAmbientLightToggle": {},
+      "ChaosiumCanvasInterfaceDrawingToggle": {},
+      "ChaosiumCanvasInterfaceMapPinToggle": {},
+      "ChaosiumCanvasInterfaceOpenDocument": {},
+      "ChaosiumCanvasInterfacePlaySound": {},
+      "ChaosiumCanvasInterfaceToScene": {},
+      "ChaosiumCanvasInterfaceTileToggle": {}
+    }
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "socket": true,
+  "manifest": "https://github.com/Elysiumvtt/Elysium/releases/latest/download/system.json",
+  "download": "https://github.com/Elysiumvtt/Elysium/releases/download/0.1.0/system.zip",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}

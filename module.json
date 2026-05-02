@@ -1,0 +1,57 @@
+{
+  "id": "elysium",
+  "title": "Elysium Rules",
+  "description": "Elysium ruleset module for the BRP system. Adds combat overhauls (action points, wound thresholds, critical tables), the Mythras fatigue system, magic system extensions (Arcane / Sorcery / Divine / Mysticism / Superpowers), ancestry & subrace handling, expanded armour layering, experience dice advancement, and many other optional rules. All major rules can be toggled on or off via Settings. Pairs with the ElysiumBRP system fork and the ElysiumCompendium content module.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.360",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Elysium Project",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/elysium.mjs"
+  ],
+  "styles": [
+    "styles/elysium.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "system": ["brp"],
+  "relationships": {
+    "systems": [
+      {
+        "id": "brp",
+        "type": "system",
+        "compatibility": {
+          "minimum": "14.0.0",
+          "verified": "14.2.1"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "elysium-compendium",
+        "type": "module",
+        "manifest": "https://github.com/Elysiumvtt/ElysiumCompendium/releases/latest/download/module.json",
+        "reason": "Provides the content (weapons, ancestries, spells, etc.) that pairs with these rules."
+      }
+    ]
+  },
+  "url": "https://github.com/Elysiumvtt/Elysium",
+  "manifest": "https://github.com/Elysiumvtt/Elysium/releases/latest/download/module.json",
+  "download": "https://github.com/Elysiumvtt/Elysium/releases/latest/download/module.zip",
+  "readme": "https://github.com/Elysiumvtt/Elysium/blob/main/README.md",
+  "bugs": "https://github.com/Elysiumvtt/Elysium/issues",
+  "changelog": "https://github.com/Elysiumvtt/Elysium/blob/main/CHANGELOG.md"
+}

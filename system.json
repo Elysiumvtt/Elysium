@@ -1,0 +1,243 @@
+{
+  "id": "elysium",
+  "title": "Elysium",
+  "description": "Elysium \u2014 a tactical Mythras-flavored fantasy RPG system for Foundry VTT. Hit-location combat with armor degradation, sustained spellcasting, EXP dice progression, and a deeply customizable ruleset for high-fantasy and low-fantasy campaigns alike.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.360",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Elysium Project",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/main.mjs",
+    "module/elysium/elysium.mjs"
+  ],
+  "styles": [
+    "styles/elysium-tokens.css",
+    "styles/elysium-reset.css",
+    "styles/elysium-base.css",
+    "styles/elysium-components.css",
+    "styles/elysium-sheets.css",
+    "styles/elysium-chat.css",
+    "styles/elysium-tracker.css",
+    "css/legacy.css",
+    "css/npc.css",
+    "styles/elysium.css"
+  ],
+  "packs": [
+    {
+      "label": "Elysium ID Macros",
+      "type": "Macro",
+      "name": "elysiumid-macros",
+      "path": "packs/elysiumid-macros",
+      "system": "elysium",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Espa\u00f1ol (Spanish)",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Fran\u00e7ais",
+      "path": "lang/fr.json"
+    }
+  ],
+  "grid": {
+    "units": "ft"
+  },
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/elysium/assets/elysium-logo.webp",
+      "thumbnail": "systems/elysium/assets/elysium-logo.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    },
+    "Item": {
+      "gear": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "skill": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "hit-location": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "personality": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "career": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "arcane": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "divine": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "mysticism": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "mutation": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "sorcery": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "super": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "failing": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "powerMod": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "wound": {},
+      "allegiance": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "passion": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description",
+          "gmDescription",
+          "effectText",
+          "prerequisitesText"
+        ]
+      },
+      "persTrait": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "reputation": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "skillcat": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      },
+      "culture": {
+        "htmlFields": [
+          "description",
+          "gmDescription"
+        ]
+      }
+    },
+    "RegionBehavior": {
+      "ElysiumCanvasInterfaceAmbientLightToggle": {},
+      "ElysiumCanvasInterfaceDrawingToggle": {},
+      "ElysiumCanvasInterfaceMapPinToggle": {},
+      "ElysiumCanvasInterfaceOpenDocument": {},
+      "ElysiumCanvasInterfacePlaySound": {},
+      "ElysiumCanvasInterfaceToScene": {},
+      "ElysiumCanvasInterfaceTileToggle": {}
+    }
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "socket": true,
+  "url": "https://github.com/Elysiumvtt/Elysium",
+  "manifest": "https://github.com/Elysiumvtt/Elysium/releases/latest/download/system.json",
+  "download": "https://github.com/Elysiumvtt/Elysium/releases/latest/download/system.zip",
+  "readme": "https://github.com/Elysiumvtt/Elysium/blob/main/README.md",
+  "bugs": "https://github.com/Elysiumvtt/Elysium/issues",
+  "changelog": "https://github.com/Elysiumvtt/Elysium/blob/main/CHANGELOG.md",
+  "license": "LICENSE.txt"
+}
